@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- This is the html code for the gallery page of the website. -->
+<html lang="en">
+	<head>
+		<!-- Here is my name. -->
+		<meta name="author" content="Ricards Augustauskis">
+		<!-- This is the description of this page. -->
+		<meta name="description" content="Compare phone cameras, easy, fast, simple.">
+		<!-- Here are some of the keywords for the website. -->
+		<meta name="keywords" content="Phone, camera, difference, comparison">
+		<!-- Declaring the character encodings. -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<!-- Here we set the viewport to the device width. -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- This is a javascript that is used for in this case for the drop down menu when the screen reaches a certain resolution and the goToTop button which is at the bottom of the screen. -->
+		<script src="../scripts.js"></script>
+		<!-- This is the CSS file that is used for this page. -->
+		<link rel="stylesheet" href="../css/gallery_page.css">
+		<!-- This is used for the drop down menu icon. -->   
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- This is the CSS file that holds all of the animations. -->
+		<link rel="stylesheet" href="../css/animations.css">
+		<!-- This is the title of the website. -->
+		<title>Camio</title>
+	</head>
+	<!-- This is the body of the gallery page. -->
+	<body class="container" id="phoneCameraGallery">
+		<header>
+			<!-- This is the navigation menu, that uses the bounceDown animation from the animations CSS file. -->
+			<nav class="menu bounceDown animations" id="menu">
+				<!-- Each of the buttons have a color transition animation on hover. -->
+				<a href="../index.html" class="btn-hover color-1">HOME</a>
+				<a href="gallery.html" class="btn-hover color-1" id="gallery">GALLERY</a>
+				<a href="contacts.html" class="btn-hover color-1">CONTACT</a>
+				<a href="about.html" class="btn-hover color-1" >ABOUT</a>
+				<a href="javascript:void(0);" class="icon" onclick="menu()">
+				<i class="fa fa-bars"></i>
+				</a>
+			</nav>
+		</header>
+		<!-- This heading is animated using the animations CSS file. -->
+		<h2 class="appear animations">These images were taken in a few different scenarios with different phones. </h2>
+		<div class="container" id="images">
+			<div class="row">
+				<div class="col-sm-12">
+					<!-- This is a section from the gallery which contains outdoor images. -->
+					<h1 class="rightSlide animations">Outdoor</h1>
+					<!-- All of these images are animated and have a full description of what is displayed, and also zoom in when you hover over them. -->
+					<div class="leftSlide animations">
+						<img class="zoom" src="../images/Nexus6p/outdoor.jpg" alt="A tree blooming with pink flowers on a bright sunny day with a clear sky." height="480" width="700" >
+						<img class="zoom" src="../images/IphoneSE/outdoor.jpg" alt="A tree blooming with pink flowers on a bright sunny day with a clear sky." height="480" width="700">
+						<img class="zoom" src="../images/SamsungXcover3/outdoor.jpg" alt="A tree blooming with pink flowers on a bright sunny day with a clear sky." height="480" width="700">
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<!-- This is a section from the gallery which contains indoor images. -->
+					<h1 class="rightSlide animations">Indoor</h1>
+					<!-- All of these images are animated and have a full description of what is displayed, and also zoom in when you hover over them. -->
+					<div class="leftSlide animations">
+						<img class="zoom" src="../images/Nexus6p/indoor.jpg" alt="A drawing of a band of skeletons playing rock music, that is in a bedside shelf." height="480" width="700">
+						<img class="zoom" src="../images/IphoneSE/indoor.jpg" alt="A white closet that has a few coats hanging on its side." height="480" width="700">
+						<img class="zoom" src="../images/SamsungXcover3/indoor.jpg" alt="A drawing of a band of skeletons playing rock music, that is in a bedside shelf." height="480" width="700">
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<!-- This is a section from the gallery which contains lowlight images. -->
+					<h1 class="rightSlide animations">Lowlight</h1>
+					<!-- All of these images are animated and have a full description of what is displayed, and also zoom in when you hover over them. -->
+					<div class="leftSlide animations">
+						<img class="zoom" src="../images/Nexus6p/lowlight.jpg" alt="A white road, that leads to a building in the dark." height="480" width="700">
+						<img class="zoom" src="../images/IphoneSE/lowlight.jpg" alt="A bus stop at night that is only being lit by a lamp post." height="480" width="700">
+						<img class="zoom" src="../images/SamsungXcover3/lowlight.jpg" alt="A tree blooming with pink flowers, with the background being a night sky with almost a full moon." height="480" width="700">
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<!-- This is a section from the gallery which contains lowlight images.-->
+					<h1 class="rightSlide animations">Flash</h1>
+					<!-- All of these images are animated and have a full description of what is displayed, and also zoom in when you hover over them. -->
+					<div class="leftSlide animations">
+						<img class="zoom" src="../images/Nexus6p/flash.jpg" alt="A few plush toys sitting on a green computer chair." height="480" width="700">
+						<img class="zoom" src="../images/IphoneSE/flash.jpg" alt="A few plush toys sitting on a green computer chair." height="480" width="700">
+						<img class="zoom" src="../images/SamsungXcover3/flash.jpg" alt="A few plush toys sitting on a green computer chair." height="480" width="700">
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<!-- This is a section from the gallery which contains lowlight images.-->
+					<h1 class="rightSlide animations">Selfie</h1>
+					<!-- All of these images are animated and have a full description of what is displayed, and also zoom in when you hover over them. -->
+					<div class="leftSlide animations">
+						<img class="zoom" src="../images/Nexus6p/selfie.jpg" alt="A man in a black cap and a dark coat with a white background." height="480" width="700">
+						<img class="zoom" src="../images/IphoneSE/selfie.jpg" alt="A man in a black cap and a dark coat with a white background." height="480" width="700">
+						<img class="zoom" src="../images/SamsungXcover3/selfie.jpg" alt="A man in a black cap and a dark coat with a white background." height="480" width="700">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- This is the footer of the gallery page, which is animated. -->
+		<footer class="appear animations">
+			<h2>Why did we chose these specific scenarios?</h2>
+			<h3>Outdoor</h3>
+			<p>In the exterior photos we can fully appreciate the dynamic range of the cameras sensor, as well as the details in the edges of the objects.</p>
+			<h3>Indoor</h3>
+			<p>The interior photos are made with artificial lights that are not always bright, so that we are able to see how much <dfn title="a random variation in brightness or color in images">noise</dfn> is present aswell as the color fidelity in these conditions.</p>
+			<h3>Low light</h3>
+			<p>In the exterior photos with very low light we can appreciate the ability of the camera sensor to capture images without <dfn title="a random variation in brightness or color in images">noise</dfn> in these extreme lowlight conditions.</p>
+			<h3>Flash</h3>
+			<p>In photos taken with flash we should look at the power and brightness of the light and if it is able to capture a well detailed images.</p>
+			<h3>Selfie</h3>
+			<p>In these images we are able to see the capability of the front camera sensor when taking pictures of a person at a hand held distance.</p>
+		</footer>
+		<!-- This button is using the topButton() function, which when pressed will scroll back up to the top of the page. -->
+		<button class="appear animations" onclick="topButton()" id="topButton" title="Go to top of the page"></button>
+	</body>
+</html>

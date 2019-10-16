@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* This is the a font called Roboto.*/
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/* This is used for the body of the about page.*/
+body{
+    margin: 0;
+    background-image: linear-gradient(to bottom, #051937, #0a274d, #0f3764, #11477c, #105895, #0765a0, #0171aa, #007eb4, #0086ad, #008c98, #008e78, #048e52);    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+/* This makes the HOME text on the nav bar orange. */
+#about{
+    color: orange;
+}
+/* This is the drop down menu which is hidden unit the screen resolution reaches a certain size. */   
+.menu{
+    overflow: hidden;
+    margin:10px;
+}
+/* This is for the navigation bar itself. */
+.menu a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center ;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 21px;
+}
+/* When you hover over a menu option it chages the text size and color. */  
+.menu a:hover{
+    font-size: 24px;
+    color:#051937;
+}
+/* When you hover over the nav bar it shifts the background to this gradient. */  
+.active{
+    background-color:linear-gradient(to right,#00d7a9, #37e893, #6ff673, #91ee58, #ace53d, #c4db23, #dad000);
+}
+/* This is the icon for the smaller nav bar which is only visible at a certain screen resolution. */    
+.menu .icon{
+    display: none;
+}
+/* For smaller screens a nav icon appears in the top right corner. */   
+@media screen and (max-width: 780px){
+    .menu a:not(:first-child){
+        display: none;
+    }
+    /* This is for the menu icon. */
+    .menu a.icon 
+   {
+      float: right;
+      display: block;
+    }
+    .col-sm-4{
+        text-align: center;
+        font-size: 25px;
+        color:#fff;
+        padding-top: 150px;
+    }
+}
+@media screen and (max-width: 780px){
+    /* Position of the menu realtive to everything else. */
+    .menu.responsive{
+        position: relative;
+    }
+    .menu.responsive .icon{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+}
+/* When the icon has been clicked all of the menu otion are displayed. */
+.menu.responsive a{
+    float: none;
+    display: block;
+    text-align: left;
+}
+/* This is used for everything. */
+*{
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* This is for the menu when it is being hovered over. */
+.btn-hover{
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+}
+/* This sets the duration of the animation for when the menu is being hovered over. */
+.btn-hover:hover{
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+/* The buttons have no outline when they are focused. */
+.btn-hover:focus{
+    outline: none;
+}
+/* This is used for the buttons when they are not being interacted with. */
+.btn-hover.color-1{
+    /* This is the gradient color that each button has. */
+    background-image: linear-gradient(to right, #051937,#051937,#051937,#051937,#051937,#00d7a9, #37e893, #6ff673, #91ee58, #ace53d, #c4db23, #dad000);
+    box-shadow: 0 4px 15px 0 #051937;
+}
+/* All the text that is on eah of the buttons is centered. */
+head{
+    text-align: center;
+}
+/* This is used for each of the questions, that are on the about page. */
+h1{
+    font-size: 45px;
+    color: #fff;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 30px 30px 30px 30px;
+    opacity: 0.87;
+    box-shadow: 0 4px 15px 0 #051937;
+    padding: 25px;
+    text-align: center;
+    background: #051937;
+}
+/* This is used for all of the answers of the about page. */
+p{
+    color: #fff;
+    margin-left: 45px;
+    margin-right: 45px;
+    background-image: linear-gradient(to bottom,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#051937,#00d7a9, #37e893, #6ff673, #91ee58, #ace53d, #c4db23, #dad000);
+    padding-left: 15px;
+    border-radius: 30px 30px 30px 30px;
+    opacity: 0.87;
+    padding: 20px;
+    font-size: 25px;
+    text-align: left;
+}
+/* When you hover over the contact text it changes color. */
+p #contactLink :hover{
+    color: #048e52;
+}
+/* Here we set the color of the contact link. */
+p #contactLink{
+    color: #fff;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- This is the html code for the about page of the webite. -->
+<html lang="en">
+	<head>
+		<!-- Here is my name. -->
+		<meta name="author" content="Ricards Augustauskis">
+		<!-- This is the description of this page. -->
+		<meta name="description" content="Learn about our website, and what it does.">
+		<!-- Here are some of the keywords for the website. -->
+		<meta name="keywords" content="Phone, camera, difference, comparison">
+		<!-- Declaring the character encodings. -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<!-- Here we set the viewport to the device width. -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- This is a javascript that is used for in this case for the drop down menu when the screen reaches a certain resolution. -->
+		<script src="../scripts.js"></script>
+		<!-- This is the CSS file that is used for this page. -->    
+		<link rel="stylesheet" href="../css/about_page.css">
+		<!-- This is the CSS file that holds all of the animations. -->
+		<link rel="stylesheet" href="../css/animations.css">
+		<!-- This is used for the drop down menu icon. -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- This is the title of the website. -->
+		<title>Camio</title>
+	</head>
+	<!-- This is the body of the about page. Which contains the about info of the website,
+		each line of text is animated by using the animations in the animations CSS file. -->
+	<body class="container" id="aboutInfo">
+		<header>
+			<!-- This is the navigation menu, that uses the bounceDown animation from the animations CSS file. -->
+			<nav class="menu bounceDown animations" id="menu">
+				<!-- Each of the buttons have a color transition animation on hover. -->
+				<a href="../index.html" class="btn-hover color-1">HOME</a>
+				<a href="gallery.html" class="btn-hover color-1">GALLERY</a>
+				<a href="contacts.html" class="btn-hover color-1">CONTACT</a>
+				<a href="about.html" class="btn-hover color-1" id="about">ABOUT</a>
+				<a href="javascript:void(0);" class="icon" onclick="menu()">
+				<i class="fa fa-bars"></i>
+				</a>
+			</nav>
+		</header>
+		<h1 class="rightSlide animations">Have you ever wondered how good are some phone cameras compared to others?</h1>
+		<p class="leftSlide animations">
+			If so, then you found the right place. Here at Camio we take similar images with 
+			different phone camera, we like it simple, so without any clever tech talk or
+			clever editing you get to decide which phone cameras you would prefer.            
+		</p>
+		<h1 class="rightSlide animations">How do we take our images?</h1>
+		<p class="leftSlide animations">
+			We take our images very seriously, we grab a phone and use it for the duration of a day, like your average user 
+			we occasionally take images using the stock camera settings, after the images have been taken we sort them out into categories.  
+		</p>
+		<h1 class="rightSlide animations">How can I get a specific phone onto the gallery page?</h1>
+		<p class="leftSlide animations">
+			You can visit our <a href="contacts.html" id="contactLink">contact</a> page and send us a request,
+			and we will try to update our gallery as soon as possible. 
+		</p>
+		<h1 class="rightSlide animations">Have some cool ideas that would work well on our website?</h1>
+		<p class="leftSlide animations">
+			Feel free to share them with us, and if we like them, we will add the to the website.
+		</p>
+	</body>
+</html>

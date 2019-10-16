@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- This is the html code for the main page of the website -->
+<html lang="en">
+	<head>
+		<!-- Here is my name. -->
+		<meta name="author" content="Ricards Augustauskis">
+		<!-- This is the description of this page. -->
+		<meta name="description" content="Compare phone cameras, easy, fast, simple.">
+		<!-- Here are some of the keywords for the website. -->
+		<meta name="keywords" content="Phone, camera, difference, comparison">
+		<!-- Declaring the character encodings. -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<!-- Here we set the viewport to the device width. -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- This is a javascript that is used for in this case for the drop down menu when the screen reaches a certain resolution. -->
+		<script src="scripts.js"></script>
+		<!-- This is the CSS file that is used for this page. -->
+		<link rel="stylesheet" href="css/main_page.css">
+		<!-- This is the CSS file that holds all of the animations. -->
+		<link rel="stylesheet" href="css/animations.css">
+		<!-- This is used for the drop down menu icon. -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- This is the title of the website. -->
+		<title>Camio</title>
+	</head>
+	<!-- This is the body of the main page which is also animated by using the animations CSS file. -->
+	<body class="container" id="content">
+		<header class="appear animations">
+			<!-- This is the navigation menu, that uses the bounceDown animation from the animations CSS file. -->
+			<nav class="menu bounceDown animations" id="menu">
+				<!-- Each of the buttons have a color transition animation on hover. -->
+				<a href="index.html" class="btn-hover color-1" id="home">HOME</a>
+				<a href="html/gallery.html" class="btn-hover color-1">GALLERY</a>
+				<a href="html/contacts.html" class="btn-hover color-1">CONTACT</a>
+				<a href="html/about.html" class="btn-hover color-1" >ABOUT</a>
+				<a href="javascript:void(0);" class="icon" onclick="menu()">
+				<i class="fa fa-bars"></i>
+				</a>
+			</nav>
+			<strong><i>Camio</i></strong>
+		</header>
+		<article class="rightSlide animations">
+			<h1>Upcoming Updates:</h1>
+			<hr />
+			<ul>
+				<li>More phones will be added soon.</li>
+			</ul>
+			<hr />
+			<ul>
+				<li>Detail category will be added in the gallery.</li>
+			</ul>
+			<hr />
+			<ul>
+				<li>Video category will be added to the gallery.</li>
+			</ul>
+			<hr />
+			<ul>
+				<li>Donation page will be added soon.</li>
+			</ul>
+			<hr />
+			<ul>
+				<li>A <dfn title="a dialog popup box that will display the image in full resolution">Modal</dfn> will be added to the gallery page.</li>
+			</ul>
+			<hr />
+		</article>
+	</body>
+</html>

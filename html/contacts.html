@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- This is the html code for the contact page of the webite. -->
+<html lang="en">
+	<head>
+		<!-- Here is my name. -->
+		<meta name="author" content="Ricards Augustauskis">
+		<!-- This is the description of this page. -->
+		<meta name="description" content="Contact us if you want more phone options.">
+		<!-- Here are some of the keywords for the website. -->
+		<meta name="keywords" content="Phone, camera, difference, comparison">
+		<!-- Declaring the character encodings. -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<!-- Here we set the viewport to the device width. -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- This is a javascript that is used for in this case for the drop down menu when the screen reaches a certain resolution. -->
+		<script src="../scripts.js"></script>
+		<!-- This is the CSS file that is used for this page. -->    
+		<link rel="stylesheet" href="../css/contacts_page.css">
+		<!-- This is the CSS file that holds all of the animations. -->    
+		<link rel="stylesheet" href="../css/animations.css">
+		<!-- This is used for the drop down menu icon. -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- This is the title of the website. -->
+		<title>Camio</title>
+		<!-- This is the navigation menu, that uses the bounceDown animation from the animations CSS file. -->
+	</head>
+	<!-- This is the body of the contact page. -->
+	<body class="container" id="contactData">
+		<header>
+			<nav class="menu bounceDown animations" id="menu">
+				<!-- Each of the buttons have a color transition animation on hover. -->
+				<a href="../index.html" class="btn-hover color-1">HOME</a>
+				<a href="gallery.html" class="btn-hover color-1">GALLERY</a>
+				<a href="contacts.html" class="btn-hover color-1" id="contacts">CONTACT</a>
+				<a href="about.html" class="btn-hover color-1" >ABOUT</a>
+				<a href="javascript:void(0);" class="icon" onclick="menu()">
+				<i class="fa fa-bars"></i>
+				</a>
+			</nav>
+		</header>
+		<p class="appear animations"><strong>Feel free to message us, all feedback is appreciated!</strong></p>
+		<!-- This is the form that a user can complete to "send" a message. -->    
+		<form>
+			<!-- This is the first name field. That has a limit of 25 characters. -->
+			<label class="appear animations" for="firstname">First Name</label>
+			<input class="rightSlide animations" type="text" id="firstname" name="firstname" placeholder="Your first name..." maxlength = "25">
+			<!-- This is the last name field. That has a limit of 25 characters. -->
+			<label class="appear animations" for="lastname">Last Name</label>
+			<input class="rightSlide animations" type="text" id="lastname" name="lastname" placeholder="Your last name..." maxlength = "25">
+			<!-- This is the topic field where the user is able to select the topic of the messeage. -->
+			<label class="appear animations" for="topic">Topic</label>
+			<!-- These are all of the values that the user is able to select. -->
+			<select class="rightSlide animations" id="topic" name="topic">
+				<option value="technical support">Technical Support</option>
+				<option value="business">Business</option>
+				<option value="new feature ideas">New Feature Ideas</option>
+				<option value="new phones">New Phone Suggestions</option>
+				<option value="bug report">Bug Report</option>
+				<option value="question">Questions</option>
+			</select>
+			<!-- This is the text field for the message itself. That has a limit of 500 characters. -->
+			<label class="appear animations" for="message">Message</label>
+			<textarea class="rightSlide animations" id="message" name="message" placeholder="Enter your text here..." style="height:200px" maxlength = "500"></textarea>
+			<!-- This is the submit button which also has a color transition when you hover over it, it also displays a confirmation that a message has been sent. -->
+			<input class="appear animations" type="submit" value="Send" onclick="confirmation()">
+			<h2 class="appear animations">Thank you!</h2>
+		</form>
+	</body>
+</html>
